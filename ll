@@ -251,7 +251,7 @@
                 Text = "",
                 Font = Enum.Font.SourceSans,
                 LayoutOrder = self.Count;
-                BorderSizePixel = 0;
+                BorderSizePixel = 2;
                 Parent = self.container;
             })
    
