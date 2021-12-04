@@ -1,7 +1,7 @@
 --Settings--
 local ESP = {
-    Enabled = true,
-    Boxes = false,
+    Enabled = false,
+    Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
 	BoxSize = Vector3.new(4,6,0),
     Color = Color3.fromRGB(192, 192, 192),
@@ -11,7 +11,7 @@ local ESP = {
     Thickness = 1,
     AttachShift = 1,
     TeamMates = true,
-    Players = false,
+    Players = true,
     
     Objects = setmetatable({}, {__mode="kv"}),
     Overrides = {}
