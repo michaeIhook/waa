@@ -4,7 +4,7 @@ local ESP = {
     Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
 	BoxSize = Vector3.new(4,6,0),
-    Color = Color3.fromRGB(48, 149, 57),
+    Color = Color3.fromRGB(255, 255, 255),
     FaceCamera = false,
     Names = true,
     TeamColor = true,
@@ -293,7 +293,7 @@ function ESP:Add(obj, options)
 		Color = box.Color,
 		Center = true,
 		Outline = true,
-        Size = 18,
+        Size = 22,
         Visible = self.Enabled and self.Names
 	})
 	box.Components["Distance"] = Draw("Text", {
