@@ -248,7 +248,7 @@ function boxBase:Update()
             self.Components.Tracer.Visible = true
             self.Components.Tracer.From = Vector2.new(TorsoPos.X, TorsoPos.Y)
             self.Components.Tracer.To = Vector2.new(cam.ViewportSize.X/2,cam.ViewportSize.Y/ESP.AttachShift)
-            self.Components.Tracer.Color = color
+            self.Components.Tracer.Color = Color3.fromRGB(88,52,42)
         else
             self.Components.Tracer.Visible = false
         end
