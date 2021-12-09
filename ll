@@ -248,7 +248,7 @@ function boxBase:Update()
             self.Components.Tracer.Visible = true
             self.Components.Tracer.From = Vector2.new(TorsoPos.X, TorsoPos.Y)
             self.Components.Tracer.To = Vector2.new(cam.ViewportSize.X/2,cam.ViewportSize.Y/ESP.AttachShift)
-            self.Components.Tracer.Color = Color3.fromRGB(88,52,42)
+            self.Components.Tracer.Color = Color3.fromRGB(255,153,153)
         else
             self.Components.Tracer.Visible = false
         end
@@ -307,7 +307,7 @@ function ESP:Add(obj, options)
 	box.Components["Tracer"] = Draw("Line", {
 		Thickness = ESP.Thickness,
 		Color = box.Color,
-        Transparency = 1,
+        Transparency = 0.5,
         Visible = self.Enabled and self.Tracers
     })
     self.Objects[obj] = box
